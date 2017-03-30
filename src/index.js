@@ -13,7 +13,6 @@ const td9 = document.querySelector('#td9')
 const anyTd = document.querySelectorAll('td')
 const turnText = document.querySelector('.turnText')
 const modal = document.querySelector('body')
-const button = document.querySelector('button')
 let currentTurn = 'X'
 const possibleWins = [[td1, td2, td3], [td4, td5, td6], [td7, td8, td9], [td1, td4, td7], [td2, td5, td8], [td3, td6, td9], [td1, td5, td9], [td3, td5, td7]]
 
@@ -44,6 +43,12 @@ for (let i = 0; i < anyTd.length; i++) {
     }
   })
 }
+
+const button = document.querySelector('button')
+button.addEventListener('click', () => {
+  modal.className = ''
+  window.location.reload()
+})
 
 const main = () => {
 
