@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-  <title>Tic Tac Toe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Tic Tac Toe</title>
 </head>
+
 <body>
-  <h1>Hello, World!</h1>
+  <main>
+    <h1>Tic Tac Toe!</h1>
+    <div class="turnText"></div>
+    <table class="table" border='1'>
+      <tbody>
+        <tr class="tr">
+            <td id="td1"> </td>
+            <td id='td2'> </td>
+            <td id='td3'> </td>
+        </tr>
+        <tr class="tr">
+            <td id='td4'> </td>
+            <td id='td5'> </td>
+            <td id='td6'> </td>
+        </tr>
+        <tr class="tr">
+            <td id='td7'> </td>
+            <td id='td8'> </td>
+            <td id='td9'> </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <div class="overlay">
+  <div class="dialog">
+    <p>Restart Game?</p>
+    <button>OK</button>
+  </div>
+  </div>
 </body>
+
 </html>
