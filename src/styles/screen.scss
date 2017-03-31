@@ -12,6 +12,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: LavenderBlush;
 }
 
 .overlay {
@@ -35,12 +36,14 @@ body.modal main {
 }
 
 .dialog {
-  background-color: white;
+  background-color: LavenderBlush;
   padding: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0 0 20px #333;
+  font-family: Gotham;
+  border-radius: 8px;
 }
 
 main {
@@ -48,12 +51,13 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 30px;
+    margin-top: 0px;
 
     h1 {
       font-family: Gotham;
       font-size: 50px;
       background-color: LavenderBlush;
+      margin-top: 10px;
     }
 
     .turnText {
@@ -74,6 +78,12 @@ main {
         font-size: 80px;
         text-align: center;
         background-color: LightBlue;
+        font-family: Gotham;
+        transition: all 0.3 linear;
+
+        &:hover {
+          background-color: LavenderBlush;
+        }
     }
 
     td:after {
@@ -103,4 +113,9 @@ main {
     tr:nth-of-type(3) td {
         border-bottom-color: transparent;
     }
+
+    button.newGame {
+      margin-top: 20px;
+    }
+
 }
