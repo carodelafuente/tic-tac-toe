@@ -32,18 +32,20 @@ for (let i = 0; i < anyTd.length; i++) {
         possibleWins[i][1].textContent === currentTurn &&
         possibleWins[i][2].textContent === currentTurn) {
         setTimeout(() => {
-          possibleWins[i][0].style.backgroundColor = 'SpringGreen'
-        }, 100)
+          possibleWins[i][0].style.backgroundColor = 'LightGreen'
+        }, 400)
         setTimeout(() => {
-          possibleWins[i][1].style.backgroundColor = 'SpringGreen'
-        }, 500)
-        setTimeout(() => {
-          possibleWins[i][2].style.backgroundColor = 'SpringGreen'
+          possibleWins[i][1].style.backgroundColor = 'LightGreen'
         }, 900)
-        turnText.textContent = `${currentTurn} Wins!`
-        someOneWon = true
-        modal.className = 'modal'
-        textinModal.textContent = `${currentTurn} Wins!`
+        setTimeout(() => {
+          possibleWins[i][2].style.backgroundColor = 'LightGreen'
+        }, 1400)
+        setTimeout(() => {
+          turnText.textContent = `${currentTurn} Wins!`
+          someOneWon = true
+          modal.className = 'modal'
+          textinModal.textContent = `${currentTurn} Wins!`
+        }, 1900)
       }
     }
 
