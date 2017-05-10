@@ -40,9 +40,9 @@ for (let i = 0; i < anyTd.length; i++) {
         setTimeout(() => {
           possibleWins[i][2].style.backgroundColor = 'LightGreen'
         }, 1400)
+        someOneWon = true
         setTimeout(() => {
           turnText.textContent = `${currentTurn} Wins!`
-          someOneWon = true
           modal.className = 'modal'
           textinModal.textContent = `${currentTurn} Wins!`
         }, 1900)
